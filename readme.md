@@ -10,14 +10,14 @@ an account. They have access to edit their listing and contact info.
 * We also have an admin page to remove or change realtors on our edit to prevent scams.We plan to implement an
 message to the realtor let them know they have go throught a process of verification on our end before they can be a realtor user.
 
-* Demo our site here: url
+## Demo our site here: url
 
-* Preview: ![preview](https://i.imgur.com/8VvdcFH.png)
+ Preview: ![preview](https://i.imgur.com/8VvdcFH.png)
 
 ## Plans and Wireframing
-*  Using Adobe Sketch 
+###  Using Adobe Sketch 
     ![preview](https://i.imgur.com/I4NiFLE.png)
-* Our Wireframe
+### Our Wireframe
     ![preview](https://i.imgur.com/GvGxtR0.jpg)
 ## Technologies Used:
 * Adobe Sketch
