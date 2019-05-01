@@ -8,7 +8,7 @@ const methodOverride = require("method-override");
 const housesController = require("./controllers/houses");
 const realtorsController = require("./controllers/realtors");
 const authController = require("./controllers/authController");
-
+//require('dotenv').config()
 require("./db/db.js");
 //require('dotenv').config()
 

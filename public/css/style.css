@@ -78,7 +78,3 @@
 .right.hide-on-med-and-down{
     position: relative;
 }
-.cards {
-    display: flex;
-    justify-content: space-between;
- }
