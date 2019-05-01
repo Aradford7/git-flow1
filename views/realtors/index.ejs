@@ -39,11 +39,13 @@
       <ul>
         <% for (let i=0; i<realtor.length; i++){%>
           <a href="/realtor/<%=realtor[i]._id%>">
+
             <li><%=realtor[i].name%><br>
                Username: <%=realtor[i].username%>
                Name:  <%=realtor[i].name%>
                Email: <%=realtor[i].email%>
                Phone: <%=realtor[i].phone%>
+
               <img src = "<%=realtor[i].houses.img%>">
             </li>
           </a>

@@ -42,5 +42,8 @@ $(document).ready(function () {
 // });
 
 
+//for input fields
+M.updateTextFields();
+
 
 //footer

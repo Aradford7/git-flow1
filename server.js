@@ -1,5 +1,5 @@
 //Set up modules here
-const PORT = 3000;
+const PORT = 3002;
 const express = require("express");
 const app = express();
 const session = require('express-session');
@@ -8,11 +8,11 @@ const methodOverride = require("method-override");
 const housesController = require("./controllers/houses");
 const realtorsController = require("./controllers/realtors");
 const authController = require("./controllers/authController");
-require('dotenv').config()
+
 require("./db/db.js");
+//require('dotenv').config()
 
 
-// const session = require('express-session');
 
 
 //require modules here
@@ -46,6 +46,6 @@ app.use("/houses", housesController);
 
 app.use('/auth', authController);
 
-app.listen(PORT, err => {
-  console.log("Server listening on port: ", PORT);
+app.listen(process.env.PORT || 3002, err => {
+  console.log("Server listening on port: ", process.env.PORT);
 });

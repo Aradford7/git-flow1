@@ -9,43 +9,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/css/style.css">
 
-    
-        <script defer type="text/javascript" src="/js/app.js"></script>
-        <script defer type="text/javascript" src= "/js/map.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTAH_yPmSaWOZnxvuNU157kgFdo0D8kaI&callback=initMap"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"defer></script>
-            <title></title>
-
-
+    <script defer type="text/javascript" src="/js/app.js"></script>
+    <script defer type="text/javascript" src= "/js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTAH_yPmSaWOZnxvuNU157kgFdo0D8kaI&callback=initMap"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"defer></script>
+    <title></title>
   </head>
-      <body>
-        <header>
-            <div class = "header">
-                <nav>
-                  <div class="nav-wrapper teal">
-                     <a href="#!" class="brand-logo center">Logo</a>
-                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                          <ul class="left hide-on-med-and-down">
-                                <li><a href="/auth/logout">Logout</a></li>
-                                <li><a href="/houses">Home</a></li>
-                         </ul>
-                         <ul class = "left hide-on-med-and-down">
-                                <li><a class = "waves-effect waves-light btn" href = "/auth/login">Register To Be A Realtor<i class="material-icons">contacts</i></a></li>
-                         <ul class = "right hide-on-med-and-down">
-                               <form action="/auth/login" method="POST">
-                                      <li><input type="text" name="username" placeholder="username"></li>
-                                      <li><input type="password" name="password" placeholder="password"></li>
-                                <li><a class = "waves-effect waves-light btn"><button>Login</button></a><li>
-                          <ul class = "right hide-on-med-and-down">
-                                <small> <%=message%></small>    
-                          </form>
-                               
-                  </div>
-                </nav> 
-      </header>
-   
+      
+<header>
+  <div class = "header">
+    <nav>
+      <div class="nav-wrapper teal">
+        <a href="#!" class="brand-logo center">The Money Team</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down">
+              <li><a href="/auth/logout">Logout</a></li>
+              <li><a href="/houses">Home</a></li>
+          </ul>
+
+          <ul class = "left hide-on-med-and-down">
+              <li><a class = "waves-effect waves-light btn" href = "/auth/login">Register To Be A Realtor<i class="material-icons">contacts</i></a></li>
+          </ul>
+          
+          <ul class = "right hide-on-med-and-down">
+              <form action="/auth/login" method="POST">
+                    <div class = "right-align">
+                      <li><input type="text" name="username" placeholder="username"></li>
+                      <li><input type="password" name="password" placeholder="password"></li>
+                            <button class="btn waves-effect waves-light red" type="submit" name="action">Login</button>
+                            <small><%=message%></small>     
+                    </div>
+              </form>
+          </ul>            
+        </div>
+    </nav>
+  </div>
+</header>
+<body>
 <main>
 
 
@@ -53,6 +55,7 @@
 <section>
    <ul id="list-of-houses">
               <%for(let i = 0; i < houses.length; i++) {%>
+
                    <li class="house"
                                   data-add="<%=houses[i].address%>"
                                   data-img="<%=houses[i].img%>"
@@ -60,23 +63,50 @@
                                   data-rooms="<%=houses[i].rooms%>"
                                   data-type="<%=houses[i].type%>" >
                   </li>
-          <div style = "float:right;" class = "container">
-    <div class="col s12 m6">
-      <div class="card">
-          <div class="card-image">
-                <img src="<%=houses[i].img%>">
-                  <span class="card-title"><%=houses[i].list%></span>
-          <a class="btn-floating halfway-fab waves-effect waves-light teal" href="/houses/<%=houses[i]._id%>"><i class="material-icons">visibility</i></a>
-        </div>
-        <div class="card-content">
-          <p><%=houses[i].body%></p>
-        </div>
-      </div>
-    
-     <%}%>
-    </ul>
-  </div>
+
+
+  <div class="centered">
+      <section class="cards">
+           <article class="card">
+                    <div class="card-image">
+                       <img src="<%=houses[i].img%>">
+                        <span class="card-title"><%=houses[i].list%></span>
+                           <a class="btn-floating halfway-fab waves-effect waves-light teal" href="/houses/<%=houses[i]._id%>"><i class="material-icons">visibility</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p><%=houses[i].address%></p>
+                    </div>
+            
+                </article>
+          <%}%>
+
+            <article class="card">
+                  <div class="card-image">
+                       <img src="<%=houses[0].img%>">
+                        <span class="card-title"><%=houses[0].list%></span>
+                           <a class="btn-floating halfway-fab waves-effect waves-light teal" href="/houses/<%=houses[0]._id%>"><i class="material-icons">visibility</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p><%=houses[0].address%></p>
+                    </div>
+            </article>
+ 
+            <article class="card">
+                  <div class="card-image">
+                       <img src="<%=houses[1].img%>">
+                        <span class="card-title"><%=houses[1].list%></span>
+                           <a class="btn-floating halfway-fab waves-effect waves-light teal" href="/houses/<%=houses[1]._id%>"><i class="material-icons">visibility</i></a>
+                  </div>
+                    <div class="card-content">
+                        <p><%=houses[1].address%></p>
+                    </div>
+            </article> 
+     
+ 
 </section>
+
+
+
 
 <section>
 
@@ -85,6 +115,7 @@
 
 
          <div >
+
               <form id="location-form">
                   <input id="location-input" type="text" placeholder="enter address">
                       <div class="input-field">
