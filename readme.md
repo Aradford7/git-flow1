@@ -15,9 +15,9 @@ message to the realtor let them know they have go throught a process of verifica
  Preview: ![preview](https://i.imgur.com/8VvdcFH.png)
 
 ## Plans and Wireframing
-###  Using Adobe Sketch 
+  Using Adobe Sketch 
     ![preview](https://i.imgur.com/I4NiFLE.png)
-### Our Wireframe
+ Our Wireframe
     ![preview](https://i.imgur.com/GvGxtR0.jpg)
 ## Technologies Used:
 * Adobe Sketch
