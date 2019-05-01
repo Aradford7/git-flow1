@@ -12,13 +12,13 @@ message to the realtor let them know they have go throught a process of verifica
 
 * Demo our site here: url
 
-* Preview: ![preview](raw url of homepage)
+* Preview: ![preview](https://i.imgur.com/8VvdcFH.png)
 
 ## Plans and Wireframing
 *  Using Adobe Sketch 
-    ![preview](url of sketch img)
+    ![preview](https://i.imgur.com/I4NiFLE.png)
 * Our Wireframe
-    ![preview] (url of img)
+    ![preview] (https://i.imgur.com/GvGxtR0.jpg)
 ##Technologies Used:
 * Adobe Sketch
 * HTML5 and CSS, Javascript
