@@ -1,8 +1,8 @@
-#Real Estate Inspired Responsive Website
+# Real Estate Inspired Responsive Website
 
-###Created By: Anis Mansour , Jomar Mendoza, and Ashley Radford
+### Created By: Anis Mansour , Jomar Mendoza, and Ashley Radford
 
-##Description
+## Description
 * Our site allows users to browses for Houses, Apartments, and Condos and filter out their search based on
 their selection without having to log in. Users can not edit information. They can see individual listing with the realtor's information. They would have to contact the realtor to learn more about the listing.
 * If a realtor wants to display their houses on the site, they would have to log in and register. Once they made
@@ -18,7 +18,7 @@ message to the realtor let them know they have go throught a process of verifica
 *  Using Adobe Sketch 
     ![preview](https://i.imgur.com/I4NiFLE.png)
 * Our Wireframe
-    ![preview] (https://i.imgur.com/GvGxtR0.jpg)
+    ![preview](https://i.imgur.com/GvGxtR0.jpg)
 ##Technologies Used:
 * Adobe Sketch
 * HTML5 and CSS, Javascript
